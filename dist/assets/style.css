@@ -30,3 +30,5 @@
 @media(max-width:800px){.experience-detail{gap:18px}.institution-logo-wrap{width:92px;flex-basis:92px}.institution-logo-0,.institution-logo-1{width:92px}}
 @media(max-width:560px){.experience-detail{gap:17px}.institution-logo-wrap{width:82px;flex-basis:82px;min-height:64px}.institution-logo{width:60px;height:60px}.institution-logo-0{width:82px;height:46px;padding:7px}.institution-logo-1{width:82px;height:56px}.institution-logo-4{width:76px;height:56px}}
 .experience-mentor a{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
+
+.hero-copy h1{margin-bottom:28px}
