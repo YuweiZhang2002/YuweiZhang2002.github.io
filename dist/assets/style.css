@@ -32,3 +32,8 @@
 .experience-mentor a{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
 
 .hero-copy h1{margin-bottom:28px}
+
+.experience-when{display:flex;flex-direction:column;align-items:flex-start;gap:12px}
+.experience-when .institution-logo-wrap{flex:none;min-height:0;padding-top:0}
+@media(max-width:560px){.experience-entry{grid-template-columns:130px minmax(0,1fr);gap:18px}.experience-when{gap:12px}.experience-date{white-space:nowrap}.experience-detail h3{font-size:16px}}
+@media(max-width:360px){.experience-entry{grid-template-columns:115px minmax(0,1fr);gap:15px}.experience-date{font-size:10px}}
