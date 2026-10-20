@@ -34,12 +34,12 @@ text={
 'zh':dict(lang='zh-CN',nav=['关于我','研究方向','论文成果','开源代码','联系'],over='计算机视觉 · 多模态学习',sub='张煜玮',alias='论文署名：Evelyn Zhang / Yuwei Zhang',intro='探索更高效的视觉智能。',bio='我的研究聚焦计算机视觉、多模态学习与扩散模型，关注如何通过 Token 剪枝、特征缓存以及更有效的视觉信息利用，提升生成模型与多模态系统的效率。',aff='同济大学 · 中国上海',scholar='谷歌学术',contact='联系我',about='关于我',aboutbody='我的工作涵盖高效扩散推理、多模态 Token 选择和鲁棒视觉理解。我关注这些方向中的共同问题：如何在减少冗余计算的同时，保留对模型真正有用的信息。',affnote='Google Scholar 所列单位：同济大学。',research='研究方向',researchsub='三个相互关联的研究方向。',rnames=['高效生成模型','多模态智能','鲁棒视觉理解'],rdesc=['面向扩散模型与 Transformer 的 Token 剪枝及特征缓存。','视觉 Token 选择、多模态推理与高效注意力。','退化条件下的图像增强、图像恢复与视觉感知。'],pubs='论文成果',pubsub='代表性工作与论文列表。',filters=['代表作','全部论文','模型效率','生成模型','视觉理解','推理规划'],search='搜索论文标题、作者或发表刊会',paper='论文',code='代码',empty='没有找到匹配的论文。',projects='开源项目',projectsub='从研究想法到可复现的代码。',pdesc=['基于相似度的 Token 剪枝，实现无需训练的扩散模型加速。','结合动态 Token 剪枝与缓存，加速 Stable Diffusion 推理。','利用去偏重要性和结构多样性进行多模态 Token 剪枝。'],repo='查看代码仓库',ctitle='期待与你交流。',cbody='欢迎就研究问题与合作机会联系我。',footer='个人学术主页',updated='论文资料核对自 Google Scholar · 2026 年 10 月 20 日',note='年份沿用 Scholar 记录；预印本与正式发表年份可能不同。',switch='English',switchurl='../')}
 education = {
  'en': [
-  ('The Hong Kong University of Science and Technology', 'Hong Kong', 'Ph.D. in Computer Science', 'Sep 2026 – Jun 2030', 'Research: Embodied intelligence, world models', 'Advisor: Prof. Jiaya Jia (IEEE Fellow)'),
+  ('The Hong Kong University of Science and Technology', 'Hong Kong', 'Ph.D. in Computer Science', 'Sep 2026 – Jun 2030', 'Research: Embodied intelligence, world models', ''),
   ('Tongji University', 'Shanghai', 'Master’s in Computer Science', 'Sep 2023 – Mar 2026', 'Research: Computer vision, multimodal large language models', ''),
   ('Beijing Jiaotong University', 'Beijing', 'Bachelor’s in Computer Science', 'Sep 2019 – Jun 2023', '', ''),
  ],
  'zh': [
-  ('香港科技大学', '香港', '计算机科学博士', '2026 年 9 月 — 2030 年 6 月', '研究方向：具身智能、世界模型', '导师：贾佳亚教授（IEEE Fellow）'),
+  ('香港科技大学', '香港', '计算机科学博士', '2026 年 9 月 — 2030 年 6 月', '研究方向：具身智能、世界模型', ''),
   ('同济大学', '上海', '计算机科学硕士', '2023 年 9 月 — 2026 年 3 月', '研究方向：计算机视觉、多模态大模型', ''),
   ('北京交通大学', '北京', '计算机科学学士', '2019 年 9 月 — 2023 年 6 月', '', ''),
  ],
