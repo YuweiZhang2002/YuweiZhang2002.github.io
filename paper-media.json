@@ -46,7 +46,7 @@
   },
   "hiloc": {
     "image": "assets/overviews/hiloc.webp",
-    "sourceUrl": "https://yuweizhang2002.github.io/HiLoc/paper/HiLoc.pdf",
+    "sourceUrl": "https://github.com/YuweiZhang2002/HiLoc/blob/main/paper/HiLoc.pdf",
     "assetSource": "https://yuweizhang2002.github.io/HiLoc/assets/teaser.webp",
     "caption": "Figure 1. Overview of HiLoc.",
     "thumbnail": "assets/overviews/hiloc-thumb.webp",
