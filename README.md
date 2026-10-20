@@ -5,6 +5,7 @@ A buildless, responsive bilingual academic homepage. English: `/`; Chinese: `/zh
 ## Content and editing
 
 - `build.py`: bilingual copy and 16 bibliographic records. Run `python3 build.py` after changing this file.
+- The Experience section replaces the former open-source project cards. Its five internships and research assistant roles, dates, supervisors, and research areas were supplied by the owner; entries are ordered by start date, newest first.
 - `dist/assets/style.css`: layout and colors.
 - `dist/assets/app.js`: publication filtering and search.
 - `dist/assets/portrait.jpg`: portrait from the supplied public Scholar profile (the original is low resolution).

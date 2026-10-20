@@ -44,7 +44,23 @@ education = {
   ('北京交通大学', '北京', '计算机科学学士', '2019 年 9 月 — 2023 年 6 月', '', ''),
  ],
 }
-# Education supplied by the owner; dates and wording follow their latest instructions.
+experience = {
+ 'en': [
+  ('Jun 2026 – Sep 2026', 'Tencent IEG', 'Intern', 'Game world models', ''),
+  ('Jan 2026 – May 2026', 'The University of Hong Kong', 'Research Assistant', '', 'Advisor: Prof. Xiaojuan Qi'),
+  ('Feb 2025 – May 2026', 'Tencent Youtu Lab', 'Intern', 'Multimodal large language models', ''),
+  ('Jun 2024 – Sep 2025', 'Shanghai Jiao Tong University', 'Research Assistant', 'Efficient AI', 'Advisor: Prof. Linfeng Zhang'),
+  ('Mar 2024 – Jun 2024', 'Intel', 'Intern', 'Fine-tuning multimodal large language models', ''),
+ ],
+ 'zh': [
+  ('2026.06 — 2026.09', '腾讯 IEG', '实习生', '游戏世界模型', ''),
+  ('2026.01 — 2026.05', '香港大学', '研究助理', '', '导师：齐晓娟老师'),
+  ('2025.02 — 2026.05', '腾讯优图实验室', '实习生', '多模态大模型', ''),
+  ('2024.06 — 2025.09', '上海交通大学', '研究助理', 'Efficient AI', '导师：张林峰老师'),
+  ('2024.03 — 2024.06', '英特尔', '实习生', '多模态大模型微调', ''),
+ ],
+}
+# Background and experience supplied by the owner.
 text['en']['aff'] = 'Ph.D. student · HKUST CSE'
 text['zh']['aff'] = '博士研究生 · 香港科技大学 CSE'
 text['en']['aboutbody'] = 'I am a first-year Ph.D. student in the Department of Computer Science and Engineering (CSE) at the Hong Kong University of Science and Technology (HKUST), advised by <a href="https://jiaya.me/home" target="_blank" rel="noopener">Prof. Jiaya Jia</a>. I am also fortunate to be co-supervised by <a href="https://llijiang.github.io/" target="_blank" rel="noopener">Prof. Li Jiang</a>.'
@@ -61,6 +77,10 @@ text['en']['rdesc'] = ['World models for games and embodied intelligence.', 'Mul
 text['zh']['rdesc'] = ['游戏世界模型与具身世界模型。', '多模态大模型的理解与推理。', '通过 Token 剪枝与特征缓存提升模型推理效率。']
 text['en']['nav'].insert(1, 'Education')
 text['zh']['nav'].insert(1, '教育背景')
+text['en']['nav'][4] = 'Experience'
+text['zh']['nav'][4] = '实习经历'
+text['en']['experience'] = 'Internships & Research Experience'
+text['zh']['experience'] = '实习经历'
 text['en']['updated'] = 'Last updated · 20 October 2026'
 text['zh']['updated'] = '最近更新 · 2026 年 10 月 20 日'
 text['en']['note'] = 'Figures are reproduced from the papers or authors’ project pages. Click an overview to enlarge it and view its source.'
@@ -69,7 +89,7 @@ school_logos = ['hkust.svg', 'tongji.png', 'bjtu.png']
 scholar='https://scholar.google.com/citations?user=renmzGoAAAAJ&hl=en'
 for lang,t in text.items():
  prefix='../' if lang=='zh' else ''
- nav=''.join(f'<a href="#{s}">{n}</a>' for s,n in zip(['about','education','research','publications','projects','contact'],t['nav']))
+ nav=''.join(f'<a href="#{s}">{n}</a>' for s,n in zip(['about','education','research','publications','experience','contact'],t['nav']))
  education_html = ''.join(
   f'<article class="education-entry"><div class="education-date">{dates}</div><div class="education-detail"><div class="school-logo-wrap"><img class="school-logo school-logo-{i}" src="{prefix}assets/schools/{school_logos[i]}" alt="{school} Logo" width="112" height="64" loading="lazy"></div><div class="school-copy"><div class="school-line"><h3>{school}</h3><span>{city}</span></div><p class="degree">{degree}</p>'
   + (f'<p class="education-focus">{focus}</p>' if focus else '')
@@ -77,7 +97,12 @@ for lang,t in text.items():
   + '</div></div></article>' for i,(school,city,degree,dates,focus,advisor) in enumerate(education[lang])
  )
  research=''.join(f'<article><span class="number">0{i+1}</span><h3>{n}</h3><p>{t["rdesc"][i]}</p></article>' for i,n in enumerate(t['rnames']))
- projects=''.join(f'<a class="project" href="https://github.com/YuweiZhang2002/{repo}" target="_blank" rel="noopener"><div class="project-top"><span class="mono">{venue}</span><span aria-hidden="true">↗</span></div><h3>{name}</h3><p>{desc}</p><span class="repo">{t["repo"]} →</span></a>' for repo,name,venue,desc in zip(['SiTo','DaTo','D2Pruner'],['SiTo','DaTo','D²Pruner'],['AAAI 2025','DIFFUSION','AAAI 2026'],t['pdesc']))
+ experience_html = ''.join(
+  f'<article class="experience-entry"><div class="experience-date">{dates}</div><div class="experience-detail"><h3>{organization}</h3><p class="experience-role">{role}</p>'
+  + (f'<p class="experience-mentor">{mentor}</p>' if mentor else '')
+  + (f'<p class="experience-focus">{focus}</p>' if focus else '')
+  + '</div></article>' for dates,organization,role,focus,mentor in experience[lang]
+ )
  filters=''.join(f'<button type="button" data-filter="{v}" aria-pressed="{str(i==0).lower()}">{n}</button>' for i,(v,n) in enumerate(zip(['selected','all','Efficiency','Generation','Vision','Reasoning'],t['filters'])))
  noscript=''.join(f'<p><a href="{html.escape(p.get("paperUrl") or scholar+"&view_op=view_citation&citation_for_view=renmzGoAAAAJ:"+p["id"])}">{html.escape(p["title"])}</a> — {p["venue"]}, {p["year"]}</p>' for p in papers)
  page=f'''<!doctype html>
@@ -88,7 +113,7 @@ for lang,t in text.items():
 <section id="education" class="section"><div class="section-heading"><div><p class="section-label">02 / EDUCATION</p><h2>{"教育背景" if lang=="zh" else "Education"}</h2></div></div><div class="education-list">{education_html}</div></section>
 <section id="research" class="section"><div class="section-heading"><div><p class="section-label">03 / RESEARCH</p><h2>{t['research']}</h2></div><p>{t['researchsub']}</p></div><div class="research-grid">{research}</div></section>
 <section id="publications" class="section"><div class="section-heading"><div><p class="section-label">04 / PUBLICATIONS</p><h2>{t['pubs']}</h2></div><a href="{scholar}" target="_blank" rel="noopener">{t['scholar']} ↗</a></div><p class="muted">{t['pubsub']}</p><div class="publication-tools"><div class="filters" role="group" aria-label="{'论文分类' if lang=='zh' else 'Publication filters'}">{filters}</div><label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="{t['search']}" aria-label="{t['search']}"></label></div><p id="result-count" role="status" aria-live="polite"></p><div id="papers"></div><noscript>{noscript}</noscript><p class="data-note">{t['note']}</p></section>
-<section id="projects" class="section"><div class="section-heading"><div><p class="section-label">05 / OPEN SOURCE</p><h2>{t['projects']}</h2></div><p>{t['projectsub']}</p></div><div class="projects-grid">{projects}</div></section>
+<section id="experience" class="section"><div class="section-heading"><div><p class="section-label">05 / EXPERIENCE</p><h2>{t['experience']}</h2></div></div><div class="experience-list">{experience_html}</div></section>
 <section id="contact" class="contact section"><div><p class="section-label">06 / CONTACT</p><h2>{t['ctitle']}</h2><p>{t['cbody']}</p></div><a class="email" href="mailto:evelynzhang2002@163.com">evelynzhang2002@163.com <span>↗</span></a></section></main><footer><span>© 2026 {t['sub']}</span><span>{t['updated']}</span><a href="#">↑ {'回到顶部' if lang=='zh' else 'Back to top'}</a></footer>
 <dialog id="figure-dialog" aria-labelledby="figure-title"><div class="figure-toolbar"><p id="figure-title"></p><button type="button" id="close-figure" aria-label="{'关闭图片' if lang=='zh' else 'Close figure'}">×</button></div><div class="figure-stage"><img id="figure-image" alt=""></div><div class="figure-footer"><p id="figure-caption"></p><a id="figure-source" target="_blank" rel="noopener">{'查看图片来源' if lang=='zh' else 'View figure source'} ↗</a></div></dialog></body></html>'''
  out=D/('zh/index.html' if lang=='zh' else 'index.html');out.parent.mkdir(exist_ok=True);out.write_text(page)

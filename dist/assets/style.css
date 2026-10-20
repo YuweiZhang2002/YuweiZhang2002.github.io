@@ -7,3 +7,14 @@
 .education-entry{grid-template-columns:220px minmax(0,1fr)}.education-detail{display:flex;align-items:flex-start;gap:25px;min-width:0}.school-logo-wrap{width:112px;min-height:68px;flex:0 0 112px;display:flex;align-items:center;justify-content:center;padding-top:3px}.school-logo{width:64px;height:64px;object-fit:contain;display:block}.school-logo-0{width:64px;height:80px}.school-copy{flex:1;min-width:0}.school-line{gap:10px}.school-line h3{font-size:18px}@media(max-width:800px){.education-entry{grid-template-columns:170px minmax(0,1fr)}.education-detail{gap:18px}.school-logo-wrap{width:82px;flex-basis:82px}.school-logo-0{width:64px}.school-line h3{font-size:17px}}@media(max-width:560px){.education-entry{grid-template-columns:1fr}.education-detail{gap:17px}.school-logo-wrap{width:74px;flex-basis:74px;min-height:60px}.school-logo{width:56px;height:56px}.school-logo-0{width:56px;height:70px}.school-line h3{font-size:17px}.school-line>span{font-size:11px}.degree{font-size:13px}}
 
 .about-text a{color:var(--accent);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:4px}
+
+.experience-entry{display:grid;grid-template-columns:220px minmax(0,1fr);gap:35px;padding:25px 0;border-top:1px solid var(--line)}
+.experience-entry:first-child{border-top:0;padding-top:5px}
+.experience-entry:last-child{padding-bottom:0}
+.experience-date{font-size:12px;color:var(--accent);padding-top:5px;font-variant-numeric:tabular-nums}
+.experience-detail h3{font-size:18px;font-weight:500;line-height:1.5;margin:0}
+.experience-role{font-size:14px;margin:6px 0 9px}
+.experience-mentor,.experience-focus{font-size:12px;color:var(--muted);margin:4px 0;line-height:1.8}
+.experience-mentor{color:var(--accent)}
+@media(max-width:800px){.experience-entry{grid-template-columns:170px minmax(0,1fr);gap:25px}.experience-detail h3{font-size:17px}}
+@media(max-width:560px){.experience-entry{grid-template-columns:1fr;gap:8px;padding:22px 0}.experience-date{font-size:11px}.experience-role{font-size:13px}nav{flex-wrap:wrap;row-gap:8px}}
