@@ -1,0 +1,34 @@
+{
+  "assets": [
+    {
+      "institution": "Tencent IEG",
+      "filename": "tencent-ieg.png",
+      "source_page": "https://ieg.tencent.com/2023/index.html",
+      "asset_url": "https://game.igcdn.cn/ieg/img-pc/logo.png"
+    },
+    {
+      "institution": "The University of Hong Kong",
+      "filename": "hku.svg",
+      "source_page": "https://www.hku.hk/en/about-hku/university-identity",
+      "asset_url": "https://www.hku.hk/adobe/dynamicmedia/deliver/dm-aid--afc8d43c-587a-43f0-b93c-26f8bd397e0e/logo-hku.svg.webp?width=208&preferwebp=true"
+    },
+    {
+      "institution": "Tencent Youtu Lab",
+      "filename": "tencent-youtu.png",
+      "source_page": "https://github.com/TencentYoutuResearch",
+      "asset_url": "https://avatars.githubusercontent.com/u/45961649?v=4"
+    },
+    {
+      "institution": "Shanghai Jiao Tong University",
+      "filename": "sjtu.png",
+      "source_page": "https://vi.sjtu.edu.cn/",
+      "asset_url": "https://vi.sjtu.edu.cn/img/base/Logo.png"
+    },
+    {
+      "institution": "Intel",
+      "filename": "intel.svg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Intel_logo_(2020,_dark_blue).svg",
+      "asset_url": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Intel_logo_%282020%2C_dark_blue%29.svg"
+    }
+  ]
+}

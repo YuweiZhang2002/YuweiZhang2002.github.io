@@ -18,3 +18,15 @@
 .experience-mentor{color:var(--accent)}
 @media(max-width:800px){.experience-entry{grid-template-columns:170px minmax(0,1fr);gap:25px}.experience-detail h3{font-size:17px}}
 @media(max-width:560px){.experience-entry{grid-template-columns:1fr;gap:8px;padding:22px 0}.experience-date{font-size:11px}.experience-role{font-size:13px}nav{flex-wrap:wrap;row-gap:8px}}
+
+.experience-detail{display:flex;align-items:flex-start;gap:25px;min-width:0}
+.experience-copy{flex:1;min-width:0}
+.institution-logo-wrap{width:112px;flex:0 0 112px;min-height:76px;display:flex;align-items:center;justify-content:center;padding-top:3px}
+.institution-logo{display:block;width:72px;height:72px;object-fit:contain}
+.institution-logo-0{width:112px;height:54px;padding:10px;background:#19324b;border-radius:4px}
+.institution-logo-1{width:112px;height:64px}
+.institution-logo-2{border-radius:3px}
+.institution-logo-4{width:92px;height:64px}
+@media(max-width:800px){.experience-detail{gap:18px}.institution-logo-wrap{width:92px;flex-basis:92px}.institution-logo-0,.institution-logo-1{width:92px}}
+@media(max-width:560px){.experience-detail{gap:17px}.institution-logo-wrap{width:82px;flex-basis:82px;min-height:64px}.institution-logo{width:60px;height:60px}.institution-logo-0{width:82px;height:46px;padding:7px}.institution-logo-1{width:82px;height:56px}.institution-logo-4{width:76px;height:56px}}
+.experience-mentor a{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}

@@ -47,16 +47,16 @@ education = {
 experience = {
  'en': [
   ('Jun 2026 – Sep 2026', 'Tencent IEG', 'Intern', 'Game world models', ''),
-  ('Jan 2026 – May 2026', 'The University of Hong Kong', 'Research Assistant', '', 'Advisor: Prof. Xiaojuan Qi'),
+  ('Jan 2026 – May 2026', 'The University of Hong Kong', 'Research Assistant', '', 'Advisor: <a href="https://xjqi.github.io/" target="_blank" rel="noopener">Prof. Xiaojuan Qi</a>'),
   ('Feb 2025 – May 2026', 'Tencent Youtu Lab', 'Intern', 'Multimodal large language models', ''),
-  ('Jun 2024 – Sep 2025', 'Shanghai Jiao Tong University', 'Research Assistant', 'Efficient AI', 'Advisor: Prof. Linfeng Zhang'),
+  ('Jun 2024 – Sep 2025', 'Shanghai Jiao Tong University', 'Research Assistant', 'Efficient AI', 'Advisor: <a href="http://www.zhanglinfeng.tech/" target="_blank" rel="noopener">Prof. Linfeng Zhang</a>'),
   ('Mar 2024 – Jun 2024', 'Intel', 'Intern', 'Fine-tuning multimodal large language models', ''),
  ],
  'zh': [
   ('2026.06 — 2026.09', '腾讯 IEG', '实习生', '游戏世界模型', ''),
-  ('2026.01 — 2026.05', '香港大学', '研究助理', '', '导师：齐晓娟老师'),
+  ('2026.01 — 2026.05', '香港大学', '研究助理', '', '导师：<a href="https://xjqi.github.io/" target="_blank" rel="noopener">齐晓娟老师</a>'),
   ('2025.02 — 2026.05', '腾讯优图实验室', '实习生', '多模态大模型', ''),
-  ('2024.06 — 2025.09', '上海交通大学', '研究助理', 'Efficient AI', '导师：张林峰老师'),
+  ('2024.06 — 2025.09', '上海交通大学', '研究助理', 'Efficient AI', '导师：<a href="http://www.zhanglinfeng.tech/" target="_blank" rel="noopener">张林峰老师</a>'),
   ('2024.03 — 2024.06', '英特尔', '实习生', '多模态大模型微调', ''),
  ],
 }
@@ -86,6 +86,7 @@ text['zh']['updated'] = '最近更新 · 2026 年 10 月 20 日'
 text['en']['note'] = 'Figures are reproduced from the papers or authors’ project pages. Click an overview to enlarge it and view its source.'
 text['zh']['note'] = '配图摘自论文或作者项目主页。点击 Overview 可放大查看，并访问原始来源。'
 school_logos = ['hkust.svg', 'tongji.png', 'bjtu.png']
+institution_logos = ['tencent-ieg.png', 'hku.svg', 'tencent-youtu.png', 'sjtu.png', 'intel.svg']
 scholar='https://scholar.google.com/citations?user=renmzGoAAAAJ&hl=en'
 for lang,t in text.items():
  prefix='../' if lang=='zh' else ''
@@ -98,10 +99,10 @@ for lang,t in text.items():
  )
  research=''.join(f'<article><span class="number">0{i+1}</span><h3>{n}</h3><p>{t["rdesc"][i]}</p></article>' for i,n in enumerate(t['rnames']))
  experience_html = ''.join(
-  f'<article class="experience-entry"><div class="experience-date">{dates}</div><div class="experience-detail"><h3>{organization}</h3><p class="experience-role">{role}</p>'
+  f'<article class="experience-entry"><div class="experience-date">{dates}</div><div class="experience-detail"><div class="institution-logo-wrap"><img class="institution-logo institution-logo-{i}" src="{prefix}assets/institutions/{institution_logos[i]}" alt="{organization} Logo" width="112" height="72" loading="lazy"></div><div class="experience-copy"><h3>{organization}</h3><p class="experience-role">{role}</p>'
   + (f'<p class="experience-mentor">{mentor}</p>' if mentor else '')
   + (f'<p class="experience-focus">{focus}</p>' if focus else '')
-  + '</div></article>' for dates,organization,role,focus,mentor in experience[lang]
+  + '</div></div></article>' for i,(dates,organization,role,focus,mentor) in enumerate(experience[lang])
  )
  filters=''.join(f'<button type="button" data-filter="{v}" aria-pressed="{str(i==0).lower()}">{n}</button>' for i,(v,n) in enumerate(zip(['selected','all','Efficiency','Generation','Vision','Reasoning'],t['filters'])))
  noscript=''.join(f'<p><a href="{html.escape(p.get("paperUrl") or scholar+"&view_op=view_citation&citation_for_view=renmzGoAAAAJ:"+p["id"])}">{html.escape(p["title"])}</a> — {p["venue"]}, {p["year"]}</p>' for p in papers)

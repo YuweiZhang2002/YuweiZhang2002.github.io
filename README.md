@@ -45,4 +45,6 @@ The owner confirmed NeurIPS 2026 for Focused Forcing and HiLoc. HiLoc metadata f
 
 `school-logos.json` records the three official university marks and their sources. Preserve their aspect ratios.
 
+`institution-logos.json` records the five internship institution logos and their sources. The IEG white wordmark uses a dark backing for contrast; all logos preserve their original proportions and colors.
+
 The GitHub Pages site is live at https://yuweizhang2002.github.io/ (English) and https://yuweizhang2002.github.io/zh/ (Chinese).
