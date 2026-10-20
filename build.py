@@ -51,6 +51,14 @@ text['en']['aboutbody'] = 'I am a first-year Ph.D. student in the Department of 
 text['zh']['aboutbody'] = '我是香港科技大学计算机科学与工程系（CSE）的博士一年级学生，导师是<a href="https://jiaya.me/home" target="_blank" rel="noopener">贾佳亚教授</a>。幸运的是，我同时还得到联合导师<a href="https://llijiang.github.io/" target="_blank" rel="noopener">蒋理教授</a>的指导。'
 text['en']['affnote'] = 'Previously, I received my master’s degree from Tongji University and my bachelor’s degree from Beijing Jiaotong University.'
 text['zh']['affnote'] = '在此之前，我在同济大学获得硕士学位，在北京交通大学获得本科学位。'
+text['en']['over'] = 'WORLD MODELS · MULTIMODAL LLMS · EFFICIENT AI'
+text['zh']['over'] = '世界模型 · 多模态大模型 · EFFICIENT AI'
+text['en']['bio'] = 'My research interests are world models for games and embodied intelligence, multimodal large language models, and efficient AI.'
+text['zh']['bio'] = '我的研究兴趣包括世界模型（游戏世界模型与具身世界模型）、多模态大模型，以及 Efficient AI。'
+text['en']['rnames'] = ['World models', 'Multimodal LLMs', 'Efficient AI']
+text['zh']['rnames'] = ['世界模型', '多模态大模型', 'Efficient AI']
+text['en']['rdesc'] = ['World models for games and embodied intelligence.', 'Multimodal understanding and reasoning with large language models.', 'Efficient model inference through token pruning and feature caching.']
+text['zh']['rdesc'] = ['游戏世界模型与具身世界模型。', '多模态大模型的理解与推理。', '通过 Token 剪枝与特征缓存提升模型推理效率。']
 text['en']['nav'].insert(1, 'Education')
 text['zh']['nav'].insert(1, '教育背景')
 text['en']['updated'] = 'Last updated · 20 October 2026'
