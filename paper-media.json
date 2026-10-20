@@ -1,0 +1,156 @@
+{
+  "UebtZRa9Y70C": {
+    "image": "assets/overviews/focused-forcing.webp",
+    "sourceUrl": "https://arxiv.org/html/2605.18346v1#S3.F3",
+    "assetSource": "https://arxiv.org/html/2605.18346v1/method.png",
+    "caption": "Figure 3. Overview of Focused Forcing.",
+    "thumbnail": "assets/overviews/focused-forcing-thumb.webp",
+    "width": 653,
+    "height": 326
+  },
+  "hqOjcs7Dif8C": {
+    "image": "assets/overviews/duca.webp",
+    "sourceUrl": "https://arxiv.org/html/2412.18911v3",
+    "assetSource": "https://arxiv.org/html/2412.18911v3/Method.png",
+    "caption": "Figure 3. Overview of DuCa.",
+    "thumbnail": "assets/overviews/duca-thumb.webp",
+    "width": 1323,
+    "height": 615
+  },
+  "Se3iqnhoufwC": {
+    "image": "assets/overviews/dato.webp",
+    "sourceUrl": "https://arxiv.org/html/2501.00375v1",
+    "assetSource": "https://arxiv.org/html/2501.00375v1/overall_img.png",
+    "caption": "Figure 3. Overall pipeline of DaTo.",
+    "thumbnail": "assets/overviews/dato-thumb.webp",
+    "width": 1559,
+    "height": 851
+  },
+  "LkGwnXOMwfcC": {
+    "image": "assets/overviews/d2pruner.webp",
+    "sourceUrl": "https://github.com/YuweiZhang2002/D2Pruner",
+    "assetSource": "https://raw.githubusercontent.com/EvelynZhang-epiclab/EvelynImgs/main/d2_overview.png",
+    "caption": "Overall pipeline of D²Pruner.",
+    "thumbnail": "assets/overviews/d2pruner-thumb.webp",
+    "width": 1800,
+    "height": 902
+  },
+  "roLk4NBRz8UC": {
+    "image": "assets/overviews/sito.webp",
+    "sourceUrl": "https://github.com/YuweiZhang2002/SiTo",
+    "assetSource": "https://raw.githubusercontent.com/EvelynZhang-epiclab/EvelynImgs/main/sito_overview.jpg",
+    "caption": "The pipeline of SiTo, illustrated with self-attention.",
+    "thumbnail": "assets/overviews/sito-thumb.webp",
+    "width": 1800,
+    "height": 1029
+  },
+  "hiloc": {
+    "image": "assets/overviews/hiloc.webp",
+    "sourceUrl": "https://yuweizhang2002.github.io/HiLoc/paper/HiLoc.pdf",
+    "assetSource": "https://yuweizhang2002.github.io/HiLoc/assets/teaser.webp",
+    "caption": "Figure 1. Overview of HiLoc.",
+    "thumbnail": "assets/overviews/hiloc-thumb.webp",
+    "width": 2600,
+    "height": 1415
+  },
+  "3fE2CSJIrl8C": {
+    "image": "assets/overviews/worldcast.webp",
+    "sourceUrl": "https://arxiv.org/html/2610.12412v1#S2.F2",
+    "assetSource": "https://arxiv.org/html/2610.12412v1/architecture_comparison.png",
+    "caption": "Figure 2. Coupled designs generate all players’ views in one model; each WorldCast player runs its own client, and clients exchange only the shared world state.",
+    "notes": "Original Figure 2 image from the arXiv HTML, scaled without cropping.",
+    "thumbnail": "assets/overviews/worldcast-thumb.webp",
+    "width": 1600,
+    "height": 900
+  },
+  "8k81kl-MbHgC": {
+    "image": "assets/overviews/nc2c.webp",
+    "sourceUrl": "https://arxiv.org/html/2601.04789v1",
+    "assetSource": "https://arxiv.org/html/2601.04789v1/99.jpg",
+    "caption": "Figure 1. Overview of the NC2C framework, which leverages LLMs to automatically transform generic non-convex optimization problems into convex forms.",
+    "notes": "Original Figure 1 image from the arXiv HTML, scaled without cropping.",
+    "thumbnail": "assets/overviews/nc2c-thumb.webp",
+    "width": 1600,
+    "height": 1311
+  },
+  "5nxA0vEk-isC": {
+    "image": "assets/overviews/linear-attention.webp",
+    "sourceUrl": "https://github.com/btzyd/Awesome-Linear-Attention-Survey/blob/main/Linear_attention_survey.pdf",
+    "assetSource": "https://raw.githubusercontent.com/btzyd/Awesome-Linear-Attention-Survey/main/Linear_attention_survey.pdf",
+    "caption": "Figure 1, page 42. Chunkwise parallel form decomposes the sequence into chunks.",
+    "notes": "Cropped from the authors’ repository PDF. This accessible version contains a technical illustration of chunkwise linear attention rather than a survey-wide taxonomy figure. OpenReview latest PDF was inaccessible (403).",
+    "thumbnail": "assets/overviews/linear-attention-thumb.webp",
+    "width": 950,
+    "height": 584
+  },
+  "kNdYIx-mwKoC": {
+    "image": "assets/overviews/rl-diffusion.webp",
+    "sourceUrl": "https://arxiv.org/html/2610.21539v1",
+    "assetSource": "https://arxiv.org/html/2610.21539v1/RL4Diff-timeline-new.png",
+    "caption": "Figure 1. Timeline of diffusion model development, from pretraining and supervised finetuning to RL-based post-training.",
+    "notes": "Original Figure 1 image from the arXiv HTML, without cropping.",
+    "thumbnail": "assets/overviews/rl-diffusion-thumb.webp",
+    "width": 984,
+    "height": 601
+  },
+  "0EnyYjriUFMC": {
+    "image": "assets/overviews/amid.webp",
+    "sourceUrl": "https://wings-of-disaster.github.io/",
+    "assetSource": "https://wings-of-disaster.github.io/assets/img/publication_preview/amid.png",
+    "caption": "Author-provided framework preview (figure number not available). AMID generator and model-agnostic adversarial distillation framework.",
+    "notes": "Image explicitly associated with AMID on coauthor Junming Liu’s official publication list. Visually verified architecture diagram. Publisher PDF access returned 403, so original figure number is unverified.",
+    "thumbnail": "assets/overviews/amid-thumb.webp",
+    "width": 1600,
+    "height": 656
+  },
+  "qjMakFHDy7sC": {
+    "image": "assets/overviews/memdpt.webp",
+    "sourceUrl": "https://arxiv.org/pdf/2406.11087v1#page=4",
+    "assetSource": "https://arxiv.org/pdf/2406.11087v1",
+    "caption": "Figure 1, page 4 (v1). Two MemDPT designs: reversible network design (left) and edge network design (right), fine-tuned using the differential privacy BK method.",
+    "notes": "Cropped from arXiv v1, preserving MemDPT naming. Later versions of arXiv 2406.11087 are DP-MemArc, which the homepage currently lists separately; do not treat these as unrelated papers.",
+    "thumbnail": "assets/overviews/memdpt-thumb.webp",
+    "width": 995,
+    "height": 320
+  },
+  "2osOgNQ5qMEC": {
+    "image": "assets/overviews/tool-planner.webp",
+    "sourceUrl": "https://arxiv.org/html/2406.03807v3#S3.F2",
+    "assetSource": "https://arxiv.org/html/2406.03807v3/main.png",
+    "caption": "Figure 2. Overview of Tool-Planner.",
+    "notes": "Same arXiv record, latest title Tool-Planner: Task Planning with Clusters across Multiple Tools. Original overview downloaded, alpha composited on white and resized.",
+    "thumbnail": "assets/overviews/tool-planner-thumb.webp",
+    "width": 1600,
+    "height": 869
+  },
+  "Y0pCki6q_DkC": {
+    "image": "assets/overviews/cpa-enhancer.webp",
+    "sourceUrl": "https://arxiv.org/html/2403.11220v2#S3.F1.fig1",
+    "assetSource": "https://arxiv.org/html/2403.11220v2/pics/structure/overall.png",
+    "caption": "Figure 1. Overview of the proposed CPA-Enhancer.",
+    "notes": "Preprint title uses Object Detection rather than Downstream Vision Tasks. Same authors and method. Original overview downloaded, alpha composited on white and resized.",
+    "thumbnail": "assets/overviews/cpa-enhancer-thumb.webp",
+    "width": 1600,
+    "height": 665
+  },
+  "IjCSPb-OGe4C": {
+    "image": "assets/overviews/ramir.webp",
+    "sourceUrl": "https://link.springer.com/article/10.1007/s10489-024-06226-y#Fig1",
+    "assetSource": "https://media.springernature.com/full/springer-static/image/art%3A10.1007%2Fs10489-024-06226-y/MediaObjects/10489_2024_6226_Fig1_HTML.png",
+    "caption": "Figure 1. Overview of our method RamIR.",
+    "notes": "Original figure from public Springer article preview; visual overview combines PVL, reasoning and action prompts, Mamba blocks and image restoration.",
+    "thumbnail": "assets/overviews/ramir-thumb.webp",
+    "width": 1600,
+    "height": 870
+  },
+  "zYLM7Y9cAGgC": {
+    "image": "assets/overviews/dp-memarc.webp",
+    "sourceUrl": "https://arxiv.org/html/2406.11087v5#Sx2.F1",
+    "assetSource": "https://arxiv.org/pdf/2406.11087",
+    "caption": "Figure 1, PDF page 4. Two different DP-MemArc designs: reversible network design and side network design.",
+    "notes": "Full Figure 1 including panels (a) and (b) cropped from arXiv v5 PDF. Early version of same arXiv record was titled MemDPT. AAAI record DOI https://doi.org/10.1609/aaai.v39i25.34830.",
+    "thumbnail": "assets/overviews/dp-memarc-thumb.webp",
+    "width": 1545,
+    "height": 580
+  }
+}

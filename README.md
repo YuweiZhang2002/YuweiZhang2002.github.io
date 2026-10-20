@@ -4,7 +4,7 @@ A buildless, responsive bilingual academic homepage. English: `/`; Chinese: `/zh
 
 ## Content and editing
 
-- `build.py`: bilingual copy and 18 bibliographic records. Run `python3 build.py` after changing this file.
+- `build.py`: bilingual copy and 16 bibliographic records. Run `python3 build.py` after changing this file.
 - `dist/assets/style.css`: layout and colors.
 - `dist/assets/app.js`: publication filtering and search.
 - `dist/assets/portrait.jpg`: portrait from the supplied public Scholar profile (the original is low resolution).
@@ -35,3 +35,13 @@ Option A (no Actions): upload the **contents** of `dist/` to the root of the `ma
 Option B (source + Actions): put this project in the repository, including `.github/workflows/pages.yml`. In Settings → Pages select “GitHub Actions”. Push to `main` or run the “Deploy academic homepage” workflow. The workflow publishes `dist/`.
 
 The `.openai` directory is only for the separate Sites preview and is not required by GitHub Pages.
+
+## Publication figures and school marks
+
+The owner confirmed NeurIPS 2026 for Focused Forcing and HiLoc. HiLoc metadata follows the camera-ready manuscript and its public project website. GRIT, Occlusion Is Underrated, and Robust Traffic Light Recognition were removed at the owner’s explicit request.
+
+`paper-media.json` records each reproduced paper figure, original source, and preview asset. All 16 entries use actual paper figures or author-published previews. The linear-attention survey uses its chunkwise parallel computation figure; the accessible author PDF does not contain an overview taxonomy. AMID uses its coauthor’s framework preview. Preprint/publication title and version differences are recorded in the manifest. Figures are reproduced without altering their scientific content; rights remain with the original authors/publishers.
+
+`school-logos.json` records the three official university marks and their sources. Preserve their aspect ratios.
+
+The GitHub Pages site is live at https://yuweizhang2002.github.io/ (English) and https://yuweizhang2002.github.io/zh/ (Chinese).

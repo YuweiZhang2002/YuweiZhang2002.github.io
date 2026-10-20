@@ -1,0 +1,43 @@
+{
+  "assets": [
+    {
+      "school": "Hong Kong University of Science and Technology",
+      "filename": "hkust.svg",
+      "source_page": "https://hkust.edu.hk/about/brand-story?cn=1",
+      "asset_url": "https://hkust.edu.hk/sites/default/files/2024-03/HKUST_logo_1.svg",
+      "dimensions": [
+        187,
+        60
+      ],
+      "format": "SVG",
+      "note": "Official abbreviated horizontal logo, emblem plus HKUST wordmark. Preserve entire 187:60 aspect ratio; do not crop off the wordmark. Visual inspection via Quick Look thumbnail confirmed correct university logo.",
+      "visually_verified": true
+    },
+    {
+      "school": "Tongji University",
+      "filename": "tongji.png",
+      "source_page": "https://www.tongji.edu.cn/xxgk1/xxbs1.htm",
+      "asset_url": "https://www.tongji.edu.cn/images/badge.png",
+      "dimensions": [
+        140,
+        140
+      ],
+      "format": "PNG RGBA",
+      "note": "Official circular university emblem; sufficient for 64 px display. Transparent background visually checked on white.",
+      "visually_verified": true
+    },
+    {
+      "school": "Beijing Jiaotong University",
+      "filename": "bjtu.png",
+      "source_page": "https://www.bjtu.edu.cn/xxgk/xxbz/index.htm",
+      "asset_url": "https://www.bjtu.edu.cn/images/2024-11/0d4cb3bdd27a4088ae62c36f75d98738.png",
+      "dimensions": [
+        500,
+        500
+      ],
+      "format": "PNG RGBA",
+      "note": "Official standard-color circular university emblem. Transparent background; visually checked.",
+      "visually_verified": true
+    }
+  ]
+}
