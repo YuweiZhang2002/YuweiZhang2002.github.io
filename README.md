@@ -18,7 +18,7 @@ Content was verified on 2026-10-20 against:
 - https://github.com/YuweiZhang2002/DaTo
 - https://github.com/YuweiZhang2002/D2Pruner
 
-Name and public email were confirmed directly by the owner. The biography is a concise synthesis of those research topics. No degree, job title, advisor, awards, or unpublished projects are assumed. Affiliation follows Scholar. Email is already published in the SiTo README. Years follow Scholar, including its 2024 entry for DaTo (arXiv:2501.00375). The list preserves separate Scholar records that may be preprint and publication versions of related work. Long author lists use “et al.” as in the visible record.
+Name and public email were confirmed directly by the owner. The biography is a concise synthesis of those research topics. Education and advisor information follow the CV screenshot supplied by the owner. The owner requested the date range without an “expected” qualifier. No current enrollment status, job title, awards, or unpublished projects are inferred. Email is already published in the SiTo README. Years follow Scholar, including its 2024 entry for DaTo (arXiv:2501.00375). The list preserves separate Scholar records that may be preprint and publication versions of related work. Long author lists use “et al.” as in the visible record.
 
 ## Preview
 
