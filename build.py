@@ -45,10 +45,12 @@ education = {
  ],
 }
 # Education supplied by the owner; dates and wording follow their latest instructions.
-text['en']['aff'] = 'Computer vision · Generative models'
-text['zh']['aff'] = '计算机视觉 · 生成模型'
-text['en']['affnote'] = 'My academic background is in computer science, with studies at Tongji University and Beijing Jiaotong University.'
-text['zh']['affnote'] = '我的学术背景是计算机科学，曾就读于同济大学与北京交通大学。'
+text['en']['aff'] = 'Ph.D. student · HKUST CSE'
+text['zh']['aff'] = '博士研究生 · 香港科技大学 CSE'
+text['en']['aboutbody'] = 'I am a first-year Ph.D. student in the Department of Computer Science and Engineering (CSE) at the Hong Kong University of Science and Technology (HKUST), advised by <a href="https://jiaya.me/home" target="_blank" rel="noopener">Prof. Jiaya Jia</a>. I am also in a joint Ph.D. training program with SLAI, co-supervised by <a href="https://llijiang.github.io/" target="_blank" rel="noopener">Prof. Li Jiang</a>.'
+text['zh']['aboutbody'] = '我是香港科技大学计算机科学与工程系（CSE）的博士一年级学生，导师是<a href="https://jiaya.me/home" target="_blank" rel="noopener">贾佳亚教授</a>。同时，我也是 SLAI 联合培养博士生，联合导师是<a href="https://llijiang.github.io/" target="_blank" rel="noopener">蒋理教授</a>。'
+text['en']['affnote'] = 'Previously, I received my master’s degree from Tongji University and my bachelor’s degree from Beijing Jiaotong University.'
+text['zh']['affnote'] = '在此之前，我在同济大学获得硕士学位，在北京交通大学获得本科学位。'
 text['en']['nav'].insert(1, 'Education')
 text['zh']['nav'].insert(1, '教育背景')
 text['en']['updated'] = 'Last updated · 20 October 2026'
