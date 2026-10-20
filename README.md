@@ -1,2 +1,37 @@
-# YuweiZhang2002.github.io
-Evelyn Zhang (张煜玮) — bilingual academic homepage
+# Evelyn Zhang / 张煜玮 — Academic Homepage
+
+A buildless, responsive bilingual academic homepage. English: `/`; Chinese: `/zh/`.
+
+## Content and editing
+
+- `build.py`: bilingual copy and 18 bibliographic records. Run `python3 build.py` after changing this file.
+- `dist/assets/style.css`: layout and colors.
+- `dist/assets/app.js`: publication filtering and search.
+- `dist/assets/portrait.jpg`: portrait from the supplied public Scholar profile (the original is low resolution).
+- `dist/`: complete ready-to-host static website; no package installation or build service needed.
+
+Content was verified on 2026-10-20 against:
+
+- https://scholar.google.com/citations?user=renmzGoAAAAJ&hl=en
+- https://github.com/YuweiZhang2002
+- https://github.com/YuweiZhang2002/SiTo
+- https://github.com/YuweiZhang2002/DaTo
+- https://github.com/YuweiZhang2002/D2Pruner
+
+Name and public email were confirmed directly by the owner. The biography is a concise synthesis of those research topics. No degree, job title, advisor, awards, or unpublished projects are assumed. Affiliation follows Scholar. Email is already published in the SiTo README. Years follow Scholar, including its 2024 entry for DaTo (arXiv:2501.00375). The list preserves separate Scholar records that may be preprint and publication versions of related work. Long author lists use “et al.” as in the visible record.
+
+## Preview
+
+Run `python3 -m http.server 8917 --directory dist` and open http://localhost:8917/ .
+
+## GitHub Pages
+
+Intended account: `YuweiZhang2002`.
+Intended personal-homepage repository: `YuweiZhang2002.github.io`.
+The intended URL, once deployed successfully, is https://yuweizhang2002.github.io/ . This is not a claim that publication has completed.
+
+Option A (no Actions): upload the **contents** of `dist/` to the root of the `main` branch of that repository. In Settings → Pages, choose “Deploy from a branch”, `main`, `/ (root)`, then Save.
+
+Option B (source + Actions): put this project in the repository, including `.github/workflows/pages.yml`. In Settings → Pages select “GitHub Actions”. Push to `main` or run the “Deploy academic homepage” workflow. The workflow publishes `dist/`.
+
+The `.openai` directory is only for the separate Sites preview and is not required by GitHub Pages.
