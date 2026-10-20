@@ -3,14 +3,14 @@
     {
       "school": "Hong Kong University of Science and Technology",
       "filename": "hkust.svg",
-      "source_page": "https://hkust.edu.hk/about/brand-story?cn=1",
-      "asset_url": "https://hkust.edu.hk/sites/default/files/2024-03/HKUST_logo_1.svg",
+      "source_page": "https://en.wikipedia.org/wiki/File:Hong_Kong_University_of_Science_and_Technology_symbol.svg",
+      "asset_url": "https://upload.wikimedia.org/wikipedia/en/8/85/Hong_Kong_University_of_Science_and_Technology_symbol.svg",
       "dimensions": [
-        187,
-        60
+        255,
+        392
       ],
       "format": "SVG",
-      "note": "Official abbreviated horizontal logo, emblem plus HKUST wordmark. Preserve entire 187:60 aspect ratio; do not crop off the wordmark. Visual inspection via Quick Look thumbnail confirmed correct university logo.",
+      "note": "Blue-and-gold standalone emblem matching the owner-provided reference. Preserve aspect ratio and transparent background.",
       "visually_verified": true
     },
     {
